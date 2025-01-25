@@ -1,5 +1,4 @@
-my_dict = \
-    {
+my_dict = {
         'tuple': (42, 'test', True, None, 36.6),
         'list': ['Guido', 1990, 3.14, False, 'Flack'],
         'dict':
