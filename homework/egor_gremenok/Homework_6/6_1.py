@@ -1,4 +1,5 @@
-long_str = "Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at, dignissim vitae libero"
+long_str = ("Etiam tincidunt neque erat, quis molestie enim imperdiet vel. "
+            "Integer urna nisl, facilisis vitae semper at, dignissim vitae libero")
 words = long_str.split()
 
 for i in range(len(words)):
