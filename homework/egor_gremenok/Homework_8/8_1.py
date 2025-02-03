@@ -2,7 +2,7 @@ from random import randint
 
 
 def get_bonus(money, luck):
-    if luck == True:  # можно опустить True, но так красивше
+    if luck is True:  # можно опустить is True, но так красивше
         bonus = randint(100, 1000)
         print(f'Бонус: {bonus}')  # для проверки бонуса
     else:
