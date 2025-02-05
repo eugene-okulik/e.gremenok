@@ -11,7 +11,7 @@ for i in range(len(buf)):
 
 max_temp = max(heat)
 min_temp = min(heat)
-avg_temp = sum(heat)/len(heat)
+avg_temp = sum(heat) / len(heat)
 
 # print(*days)
 # print(*heat)
