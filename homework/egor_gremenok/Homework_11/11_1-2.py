@@ -2,7 +2,6 @@ class Book:
     material = "бумага"
     text = True
 
-
     def __init__(self, title, author, size, isbn, reserve):
         self.title = title
         self.author = author
@@ -13,7 +12,6 @@ class Book:
 
 class Textbook(Book):
     tests = True
-
 
     def __init__(self, title, author, size, isbn, reserve, subject, grade):
         super().__init__(title, author, size, isbn, reserve)
