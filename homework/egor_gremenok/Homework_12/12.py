@@ -7,21 +7,26 @@ class Flower:
         self.cost = cost
         self.lifespan = lifespan
 
+
 class Rose(Flower):
     def __init__(self, color, freshness, stem_length, cost, lifespan):
         super().__init__("Роза", color, freshness, stem_length, cost, lifespan)
+
 
 class Tulip(Flower):
     def __init__(self, color, freshness, stem_length, cost, lifespan):
         super().__init__("Тюльпан", color, freshness, stem_length, cost, lifespan)
 
+
 class Daisy(Flower):
     def __init__(self, color, freshness, stem_length, cost, lifespan):
         super().__init__("Ромашка", color, freshness, stem_length, cost, lifespan)
 
+
 class Lilac(Flower):
     def __init__(self, color, freshness, stem_length, cost, lifespan):
         super().__init__("Сирень", color, freshness, stem_length, cost, lifespan)
+
 
 class Bouquet:
     def __init__(self):
@@ -62,6 +67,7 @@ class Bouquet:
             if min_lifespan <= flower.lifespan <= max_lifespan:
                 result.append(flower)
         return result
+
 
 rose1 = Rose("Красный", 1, 47, 2.2, 7)
 rose2 = Rose("Белый", 4, 52, 4.50, 6)
