@@ -6,9 +6,11 @@ def get_line(lines, pos):
     string = str(lines[pos])
     return string
 
+
 def find_start(string):
     start_pos = string.find('.') + 2
     return start_pos
+
 
 def find_end(string):
     end_pos = -1
@@ -18,6 +20,7 @@ def find_end(string):
         end_pos = string.find('-', start)
         start = end_pos + 1
     return end_pos - 1
+
 
 def read_file():
     line_list = []
@@ -29,6 +32,7 @@ def read_file():
         for line in data_file.readlines():
             line_list.append(line)
     return line_list
+
 
 def get_date(line):
     return datetime.datetime.strptime(line[find_start(line): find_end(line)], "%Y-%m-%d %H:%M:%S.%f")
